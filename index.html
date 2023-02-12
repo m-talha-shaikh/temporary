@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="./main.css">
+	<title>practice</title>
+</head>
+<body>
+<!-- 	<div id="box">
+		<button id="hello">Hello</button>
+		<button id="click">Click Me</button>
+	</div> -->
+	<div id="palette">
+		<div class="boxes"></div>
+		<div class="boxes"></div>
+		<div class="boxes"></div>
+		<div class="boxes"></div>
+		<div class="boxes"></div>
+		<div class="boxes"></div>
+		<div class="boxes"></div>
+		<div class="boxes"></div>
+		<div class="boxes"></div>
+		<div class="boxes"></div>
+		<div class="boxes"></div>
+		<div class="boxes"></div>
+		<div class="boxes"></div>
+		<div class="boxes"></div>
+		<div class="boxes"></div>
+		<div class="boxes"></div>
+		<div class="boxes"></div>
+		<div class="boxes"></div>
+		<div class="boxes"></div>
+		<div class="boxes"></div>
+		<div class="boxes"></div>
+		<div class="boxes"></div>
+		<div class="boxes"></div>
+		<div class="boxes"></div>
+		<div class="boxes"></div>
+		<div class="boxes"></div>
+		<div class="boxes"></div>
+		<div class="boxes"></div>
+		<div class="boxes"></div>
+		<div class="boxes"></div>
+	</div>
+	<script type="text/javascript">
+		function generateRandom(min = 0, max = 16777215) {
+	    // find diff
+	    let difference = max - min;
+	    // generate random number 
+	    let rand = Math.random();
+	    // multiply with difference 
+	    rand = Math.floor( rand * difference);
+	    // add with min value 
+	    rand = rand + min;
+	    rand = rand.toString(16);
+	    return rand;
+	}
+
+		// let state = 0;
+		// const clicky = document.getElementById("click");
+		// const hello = document.getElementById('hello');
+		// clicky.addEventListener('click', ()=> {
+		// 		if(state === 0){
+		// 			hello.style.display = 'block'
+		// 			state = 1
+		// 		}
+		// 		else{
+		// 			hello.style.display = 'none'
+		// 			state = 0
+		// 		}
+		// })
+		const palette = document.getElementById("palette");
+		palette.addEventListener('mouseover', (e)=>{
+			e.target.style.backgroundColor = '#' + generateRandom();
+		})
+	</script>
+</body>
+</html>
